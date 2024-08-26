@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BullPay Popup</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon-bull.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/script.js"></script>
+</head>
+
+<body class="btn_popup_container">
+  <div class="pay_sol">
+    <div class="title">
+      Pay with Solana (Click on the button)
+    </div>
+    <div class="btn_container">
+      <button onclick="openModal('xayua5')" id="solanaBtn">Pay with Solana</button>
+    </div>
+  </div>
+  <div class="pay_spl">
+    <div class="title top_margin">
+      Pay with any SPL token (Click on the button)
+    </div>
+    <div class="btn_container">
+      <button onclick="openModal('xb9amr')" id="splBtn">Pay with SPL</button>
+    </div>
+  </div>
+  <!-- Modal Structure -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="iframe_container">
+        <iframe id="bullpay_embed" src="">
+          Your browser does not support embedded iframe.
+        </iframe>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
