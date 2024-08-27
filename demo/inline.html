@@ -7,24 +7,30 @@
   <title>BullPay Inline</title>
   <link rel="icon" type="image/x-icon" href="./images/favicon-bull.png">
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/inline.js"></script>
 </head>
 
-<body>
-  <div class="title">
-    Pay with Solana (SOL)
+<body class="inline_container">
+  <div class="pay_sol">
+    <div class="title">
+      Pay with Solana (SOL)
+    </div>
+    <div class="iframe_container">
+      <iframe id="sol_embed" src="">
+        Your browser does not support embedded iframes.
+      </iframe>
+    </div>
   </div>
-  <div class="iframe_container">
-    <iframe src="https://pay.bullverse.io/checkout/transaction/xayua5">
-      Your browser does not support embedded iframes.
-    </iframe>
-  </div>
-  <div class="title">
-    Pay with any SPL tokens
-  </div>
-  <div class="iframe_container">
-    <iframe src="https://pay.bullverse.io/checkout/transaction/xb9amr">
-      Your browser does not support embedded iframes.
-    </iframe>
+  <hr />
+  <div class="pay_spl">
+    <div class="title">
+      Pay with any SPL tokens
+    </div>
+    <div class="iframe_container">
+      <iframe id="spl_embed" src="">
+        Your browser does not support embedded iframes.
+      </iframe>
+    </div>
   </div>
 </body>
 
